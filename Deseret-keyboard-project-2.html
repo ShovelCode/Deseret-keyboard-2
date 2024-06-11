@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deseret Keyboard 2</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #textArea {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .buttonRow {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <textarea id="textArea" placeholder="Your text will appear here..."></textarea>
+        <div class="buttonRow">
+            <button onclick="insertText('𐐀')">𐐀 ii</button>
+            <button onclick="insertText('𐐄')">𐐄 oh</button>
+            <button onclick="insertText('𐐈')">𐐈 ae </button>
+            <button onclick="insertText('𐐌')">𐐌 ay</button>
+            <button onclick="insertText('𐐐')">𐐐 h</button>
+            <button onclick="insertText('𐐔')">𐐔 d</button>
+            <button onclick="insertText('𐐘')">𐐘 g</button>
+            <button onclick="insertText('𐐜')">𐐜 dh</button>
+            <button onclick="insertText('𐐠')">𐐠 zh</button>
+            <button onclick="insertText('𐐤')">𐐤 n</button>
+        </div>
+        <div class="buttonRow">
+            <button onclick="insertText('𐐁')">𐐁 ei</button>
+            <button onclick="insertText('𐐅')">𐐅 oo</button>
+            <button onclick="insertText('𐐉')">𐐉 ah</button>
+            <button onclick="insertText('𐐍')">𐐍 ow</button>
+            <button onclick="insertText('𐐑')">𐐑 p</button>
+            <button onclick="insertText('𐐕')">𐐕 ch</button>
+            <button onclick="insertText('𐐙')">𐐙 f</button>
+            <button onclick="insertText('𐐝')">𐐝 s</button>
+            <button onclick="insertText('𐐡')">𐐡 r</button>
+            <button onclick="insertText('𐐥')">𐐥 ng</button>
+
+        </div>
+        <div class="buttonRow">
+            <button onclick="insertText('𐐂')">𐐂 aa</button>
+            <button onclick="insertText('𐐆')">𐐆 ih</button>
+            <button onclick="insertText('𐐊')">𐐊 uh</button>
+            <button onclick="insertText('𐐎')">𐐎 w</button>
+            <button onclick="insertText('𐐒')">𐐒 b</button>
+            <button onclick="insertText('𐐖')">𐐖 j</button>
+            <button onclick="insertText('𐐚')">𐐚 v</button>
+            <button onclick="insertText('𐐞')">𐐞 z</button>
+            <button onclick="insertText('𐐢')">𐐢 l</button>
+
+        </div>
+        <div class="buttonRow">
+            <button onclick="insertText('𐐃')">𐐃 long ah</button>
+            <button onclick="insertText('𐐇')">𐐇 eh</button>
+            <button onclick="insertText('𐐋')">𐐋 short oo</button>
+            <button onclick="insertText('𐐏')">𐐏 y</button>
+            <button onclick="insertText('𐐓')">𐐓 t</button>
+            <button onclick="insertText('𐐗')">𐐗 k</button>
+            <button onclick="insertText('𐐛')">𐐛 th</button>
+            <button onclick="insertText('𐐟')">𐐟 sh</button>
+            <button onclick="insertText('𐐣')">𐐣 m</button>
+        </div>
+
+        <div class="buttonRow">
+            <button onclick="insertText('𐐦')">𐐦 oi</button>
+            <button onclick="insertText('𐐧')">𐐧 ew</button>
+        </div>
+
+        <div class="buttonRow">
+            <button onclick="insertText(' ')">Space</button>
+        </div>
+
+        <!-- oi and ew should be added here -->
+    </div>
+
+    <script>
+        function insertText(text) {
+            const textArea = document.getElementById('textArea');
+            textArea.value += text;
+        }
+    </script>
+</body>
+</html>
